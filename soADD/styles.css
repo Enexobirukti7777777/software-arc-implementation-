@@ -1,0 +1,37 @@
+body{
+    background: url(sad.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    text-align: center;
+}
+.wrapper{
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50%,-50%);rgba(0,0,0,0.5)
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    border: 1px solid rgb(241,241,241);
+    padding: 10px 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5xp 10px 0 ;
+}
+.wrapper  h2{
+    font-size: 30px;
+    color: #fffefe;
+
+}
+.input-field{
+    position: relative;
+}
+input-field input[type="username"]:not(:focus)::placeholder,
+input-field input[type="email"]:not(:focus)::placeholder,
+input-field input[type="passward"]:not(:focus)::placeholder{
+    transform: translateY(0%);
+    translate:transform 0.2 ease-in-out;
+    font-size: 16px;
+}
